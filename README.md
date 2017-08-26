@@ -67,6 +67,8 @@ And in [vendor.ts](https://github.com/preboot/angular-webpack/blob/master/src/ve
 import 'bootstrap/dist/css/bootstrap.css';
 ```
 
+Sources :
+ - https://github.com/preboot/angular-webpack
 
 # License
 
