@@ -48,9 +48,8 @@ __build__/**
 .webpack.json
 
 # Doc #
-/doc/
+# /doc/
 
 # IDE #
 .idea/
 *.swp
-

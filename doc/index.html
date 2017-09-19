@@ -1,0 +1,250 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>neptune</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.js" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">neptune</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<ul class="tsd-breadcrumb">
+				<li>
+					<a href="globals.html">Globals</a>
+				</li>
+			</ul>
+			<h1> neptune</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<h1 id="neptune">Neptune</h1>
+				<h3 id="install-the-dependencies-with-npm">install the dependencies with npm</h3>
+				<p>$ npm install</p>
+				<h3 id="start-the-server">start the server</h3>
+				<p>$ npm start</p>
+				<pre><code>[<span class="hljs-string">http://localhost:8080</span>](<span class="hljs-link">http://localhost:8080</span>)
+</code></pre><p>As an alternative, you can work using Hot Module Replacement (HMR):</p>
+				<ul>
+					<li><code>npm run start:hmr</code></li>
+				</ul>
+				<p>And you are all set! You can now modify your components on the fly without having to reload the entire page.</p>
+				<h2 id="testing">Testing</h2>
+				<h4 id="1-unit-tests">1. Unit Tests</h4>
+				<ul>
+					<li>single run: <code>npm test</code></li>
+					<li>live mode (TDD style): <code>npm run test-watch</code></li>
+				</ul>
+				<h4 id="2-end-to-end-tests-aka-e2e-integration-">2. End-to-End Tests (aka. e2e, integration)</h4>
+				<ul>
+					<li>single run:<ul>
+							<li>in a tab, <em>if not already running!</em>: <code>npm start</code></li>
+							<li>in a new tab: <code>npm run webdriver-start</code></li>
+							<li>in another new tab: <code>npm run e2e</code></li>
+						</ul>
+					</li>
+					<li>interactive mode:<ul>
+							<li>instead of the last command above, you can run: <code>npm run e2e-live</code></li>
+							<li>when debugging or first writing test suites, you may find it helpful to try out Protractor commands without starting up the entire test suite. You can do this with the element explorer.</li>
+							<li>you can learn more about <a href="https://github.com/angular/protractor/blob/master/docs/debugging.md#testing-out-protractor-interactively">Protractor Interactive Mode here</a></li>
+						</ul>
+					</li>
+				</ul>
+				<h2 id="production">Production</h2>
+				<p>To build your application, run:</p>
+				<ul>
+					<li><code>npm run build</code></li>
+				</ul>
+				<p>You can now go to <code>/dist</code> and deploy that to your server!</p>
+				<h2 id="documentation">Documentation</h2>
+				<p>You can generate api docs (using <a href="http://typedoc.org/">TypeDoc</a>) for your code with the following:</p>
+				<ul>
+					<li><code>npm run docs</code></li>
+				</ul>
+				<h4 id="how-to-include-external-angular-libraries-">How to include external angular libraries ?</h4>
+				<p>It&#39;s simple, just install the lib via npm and import it in your code when you need it. Don&#39;t forget that you need to configure some external libs in the <a href="https://github.com/preboot/angular-webpack/blob/master/src/main.ts">bootstrap</a> of your application.</p>
+				<h4 id="how-to-include-external-css-files-such-as-bootstrap-css-">How to include external css files such as bootstrap.css ?</h4>
+				<p>Just install the lib and import the css files in <a href="https://github.com/preboot/angular-webpack/blob/master/src/vendor.ts">vendor.ts</a>. For example this is how to do it with bootstrap:</p>
+				<pre><code class="lang-sh">npm install bootstrap@next --save
+</code></pre>
+				<p>And in <a href="https://github.com/preboot/angular-webpack/blob/master/src/vendor.ts">vendor.ts</a> add the following:</p>
+				<pre><code class="lang-ts"><span class="hljs-keyword">import</span> <span class="hljs-string">'bootstrap/dist/css/bootstrap.css'</span>;
+</code></pre>
+				<p>Sources :</p>
+				<ul>
+					<li><a href="https://github.com/preboot/angular-webpack">https://github.com/preboot/angular-webpack</a></li>
+				</ul>
+				<h1 id="license">License</h1>
+				<p><a href="/LICENSE">MIT</a></p>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class="globals  ">
+						<a href="globals.html"><em>Globals</em></a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_app_about_about_component_.html">"app/about/about.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_app_about_about_component_spec_.html">"app/about/about.component.spec"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_app_app_component_.html">"app/app.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_app_app_component_spec_.html">"app/app.component.spec"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_app_app_module_.html">"app/app.module"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_app_app_routing_.html">"app/app.routing"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_app_home_home_component_.html">"app/home/home.component"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_app_home_home_component_spec_.html">"app/home/home.component.spec"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_app_shared_api_service_.html">"app/shared/api.service"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_app_shared_api_service_spec_.html">"app/shared/api.service.spec"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_app_shared_index_.html">"app/shared/index"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_main_.html">"main"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_polyfills_.html">"polyfills"</a>
+					</li>
+					<li class=" tsd-kind-external-module">
+						<a href="modules/_vendor_.html">"vendor"</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+			<ul class="tsd-legend">
+				<li class="tsd-kind-module"><span class="tsd-kind-icon">Module</span></li>
+				<li class="tsd-kind-object-literal"><span class="tsd-kind-icon">Object literal</span></li>
+				<li class="tsd-kind-variable"><span class="tsd-kind-icon">Variable</span></li>
+				<li class="tsd-kind-function"><span class="tsd-kind-icon">Function</span></li>
+				<li class="tsd-kind-function tsd-has-type-parameter"><span class="tsd-kind-icon">Function with type parameter</span></li>
+				<li class="tsd-kind-index-signature"><span class="tsd-kind-icon">Index signature</span></li>
+				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-enum"><span class="tsd-kind-icon">Enumeration</span></li>
+				<li class="tsd-kind-enum-member"><span class="tsd-kind-icon">Enumeration member</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-enum"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-enum"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-interface"><span class="tsd-kind-icon">Interface</span></li>
+				<li class="tsd-kind-interface tsd-has-type-parameter"><span class="tsd-kind-icon">Interface with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-interface"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-interface"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-interface"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-interface"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
+				<li class="tsd-kind-class tsd-has-type-parameter"><span class="tsd-kind-icon">Class with type parameter</span></li>
+				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class"><span class="tsd-kind-icon">Accessor</span></li>
+				<li class="tsd-kind-index-signature tsd-parent-kind-class"><span class="tsd-kind-icon">Index signature</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited constructor</span></li>
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-protected"><span class="tsd-kind-icon">Protected accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private method</span></li>
+				<li class="tsd-kind-accessor tsd-parent-kind-class tsd-is-private"><span class="tsd-kind-icon">Private accessor</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static property</span></li>
+				<li class="tsd-kind-call-signature tsd-parent-kind-class tsd-is-static"><span class="tsd-kind-icon">Static method</span></li>
+			</ul>
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="http://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+<script>if (location.protocol == 'file:') document.write('<script src="assets/js/search.js"><' + '/script>');</script>
+</body>
+</html>
