@@ -48,7 +48,7 @@ __build__/**
 .webpack.json
 
 # Doc #
-# /doc/
+# /docs/
 
 # IDE #
 .idea/
