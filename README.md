@@ -1,4 +1,4 @@
-# Neptune
+# [Neptune][documentationLink]
 
 ### install the dependencies with npm
 $ npm install
@@ -73,3 +73,5 @@ Sources :
 # License
 
 [MIT](/LICENSE)
+
+[documentationLink]: https://anistark.github.io/neptune
