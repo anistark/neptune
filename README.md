@@ -42,6 +42,8 @@ To build your application, run:
 
 You can now go to `/dist` and deploy that to your server!
 
+### Push the dist folder to gh-pages branch `git subtree push --prefix dist origin gh-pages`
+
 ## Documentation
 
 You can generate api docs (using [TypeDoc](http://typedoc.org/)) for your code with the following:
